@@ -1,0 +1,233 @@
+<!-- <body class="body">
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <h1 style="text-align:center;color:white">MILESTONE </h1>
+    <i style="font-size: 30px; margin-left: 45.6em; margin-top: 15px; color: aliceblue;" class="fas fa-cart-plus"
+      (click)="cartpage()"></i>
+
+
+
+    <div style="font-size:12px ; color: yellow" class="badge bg-danger" slot="end" routerLink="/cart"> {{cartItem}}</div>
+
+  </mat-toolbar-row>
+
+
+
+</mat-toolbar>
+<br>
+<br>
+<br> -->
+
+
+
+      <!-- <div class="panel-heading">
+<h1 style="font-size:50px;text-align:center;color: rgb(5, 74, 117) ;font-weight: bolder;padding: 2%;">PRODUCT PAGE</h1>
+        </div>
+      -->
+
+        <!-- <ngb-carousel *ngIf="images">
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="images" style="height:300px;width:1700px;" alt="Random first slide" />
+            </div>
+            <div class="carousel-caption">
+             
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="images" style="height:300px;width:1700px; " alt="Random second slide" />
+            </div>
+            <div class="carousel-caption">
+             
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="images"style="height:300px;width:1700px;" alt="Random third slide" />
+            </div>
+            <div class="carousel-caption">
+             
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="images" style="height:300px;width:1700px;" alt="Random fourth slide" />
+            </div>
+            <div class="carousel-caption">
+         
+            </div>
+          </ng-template>
+        </ngb-carousel> 
+        <br>
+        <br>
+
+
+        
+
+<section class="main">
+  
+  
+  
+  <div *ngFor="let cart of products">
+    
+
+    <div class="users">
+
+      <div class="card1">
+        <div class="zoom">
+          
+          
+
+
+          <img src="{{cart.imgurl}}" routerLink="/productroute" class="img">
+          
+        </div>
+        <table style="height:52px; padding: 2%">
+          <tr>
+            <td class="tdstyle"> name: </td>
+            <td>{{cart.name}}</td>
+          </tr>
+
+          <tr>
+            <td class="tdstyle"> price: </td>
+            <td>{{cart.price}}</td>
+          </tr>
+          <tr>
+            <td class="tdstyle"> qnt: </td>
+            <td>{{cart.qnt}}</td>
+          </tr>
+          
+         
+          <tr>
+            <button class="btn btn-primary" (click)="addCart(cart)"> Add to cart</button>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+</body>
+      -->
+     
+
+<!-- 
+      <div class="row row-cols-1 row-cols-md-3">
+        <div *ngFor="let cart of products">
+
+        <div class="col mb-4">
+        
+          <div class="card">
+      
+           
+            <div class="view overlay">
+              <img class="card-img-top" src="{{cart.imgurl}}"
+                alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+      
+          
+            <div class="card-body">
+              <table style="height:52px; padding: 2%">
+                <tr>
+                  <td class="tdstyle"> name: </td>
+                  <td>{{cart.name}}</td>
+                </tr>
+      
+                <tr>
+                  <td class="tdstyle"> price: </td>
+                  <td>{{cart.price}}</td>
+                </tr>
+                <tr>
+                  <td class="tdstyle"> qnt: </td>
+                  <td>{{cart.qnt}}</td>
+                </tr>
+                
+               
+                <tr>
+                  <button class="btn btn-primary" (click)="addCart(cart)"> Add to cart</button>
+                </tr>
+      
+              </table>
+             
+            
+      
+            </div>
+      
+          </div>
+         
+        </div>
+      
+       
+      </div> -->
+
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+         
+          <a href="/home" style="text-decoration: none;">Home</a>
+         
+          <br>
+          <a href="/products" style="text-decoration: none;">Products Dealer</a>
+          <br>
+          <a href="" style="text-decoration: none;">Inventory</a>
+          <br>
+          <a href="" style="text-decoration: none;">Dealer Management</a>
+          
+          
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        
+        <div class="container-fluid">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <i class="fa fa-shopping-cart"  style="color:white; margin-left: 313px;
+          margin-top: -41px; font-size: 22px" aria-hidden="true" routerLink="/cart"></i>
+           <div style="font-size: 10px; margin-left: 328px;
+           margin-top: -55px; color: yellow" class="badge bg-danger" slot="end" routerLink="/cart"> {{cartItem}}</div>
+         
+        </div>
+     
+      </nav>
+  <br>
+  
+ 
+      <div class="row row-cols-2 row-cols-sm-3  g-4"  >
+        <div *ngFor="let cart of products">
+  <div class="col">
+
+    <div class="card h-100" style="margin: 7px; border-color: rgb(113, 113, 110);">
+      <img src={{cart.imgurl}} class="card-img-top" >
+      <div class="card-body">
+        <tr>
+          <td style="padding: 0%;" class="tdstyle"> name : </td>
+          <td>{{cart.name}}</td>
+        </tr>
+
+        <tr>
+          <td class="tdstyle"> price: </td>
+          <td>{{cart.price}}</td>
+        </tr>
+        <tr>
+          <td class="tdstyle"> qnt: </td>
+          <td>{{cart.qnt}}</td>
+        </tr>
+        <tr>
+        
+          <td>{{cart.Totalprice}}</td>
+        </tr>
+      </div>
+      <div class="card-footer">
+        <button style="margin-left: 15px;" class="btn btn-primary" (click)="addCart(cart)"> Add to cart</button>
+      </div>
+    </div>
+  </div>
+ 
+ 
+</div>

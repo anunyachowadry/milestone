@@ -1,0 +1,19 @@
+mat-toolbar{
+  background-color:#3b3b3b;;
+  height: 80px;
+  background-image: url(https://www.kajariaceramics.com/product-picture/GP02384_b.jpg);
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  background-image: url(https://img.freepik.com/premium-photo/grey-marble-texture-background_34936-2588.jpg?w=2000);
+}
+body { margin-top:20px; }
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }
+.body{
+  background-image: url(https://img.freepik.com/premium-photo/grey-marble-texture-background_34936-2588.jpg?w=2000);
+}

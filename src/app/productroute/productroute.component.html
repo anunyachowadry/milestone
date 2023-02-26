@@ -1,0 +1,204 @@
+<!-- <body class="body">
+    <mat-toolbar class="toolbar">
+      <mat-toolbar-row>
+        <h1 style="text-align:center;color:white">MILESTONE </h1>
+        <i style="font-size: 30px; margin-left: 45.6em; margin-top: 15px; color: aliceblue;" class="fas fa-cart-plus"
+          (click)="cartpage()"></i>
+    
+    
+    
+        <div style="font-size:12px ; color: yellow" class="badge bg-danger" slot="end" routerLink="/cart"> {{cartItem}}</div>
+    
+      </mat-toolbar-row>
+    
+    
+    
+    </mat-toolbar>
+
+
+<div *ngFor="let cart of products">
+
+
+
+
+<div class="container my-5">
+
+    <div class="card details-card p-0">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-12">
+                <img class="img-fluid details-img" src="{{cart.imgurl}}">
+            </div>
+            <div class="col-md-6 col-sm-12 description-container p-5">
+                <div class="main-description">
+                    <tr>
+                        <td class="tdstyle"> name: </td>
+                        <td>{{cart.name}}</td>
+                      </tr>
+            
+                      <tr>
+                        <td class="tdstyle"> price: </td>
+                        <td>{{cart.price}}</td>
+                      </tr>
+                      <tr>
+                        <td class="tdstyle"> qnt: </td>
+                        <td>{{cart.qnt}}</td>
+                      </tr>
+                    <form class="add-inputs" method="post">
+                        <div class="qty-selector">
+                            <button fill="clear"  (click)="decQnt(cart.prodId, cart.qnt)" style="color:red;"> -
+                              <i name="remove-circle-outline"></i>
+                            </button>
+                            <label>{{cart.qnt}}</label>
+                            <button fill="clear" (click)="incQnt(cart.prodId, cart.qnt)" style="color:green;"> +
+                              <i name="add-circle-outline"></i>
+            
+                            </button>
+                            <br>
+                            <label class="label-info" style="font-weight: bold;">Totalprice :</label><span> {{cart.price * cart.qnt}}</span>
+       
+                   
+                        <button name="add_to_cart" type="submit" class="btn btn-primary btn-lg">Add to cart</button> -->
+                  
+                  
+
+
+
+
+
+
+ 
+
+<!-- <div class="container">
+
+  <div id="arrow-left" class="arrow"></div>
+
+  <div id="slider">
+    <div *ngFor="let cart of products">
+
+      <div class="slide slide1" >
+        <img class="slide slide1" src="{{cart.imgurl}}">
+
+          <div class="slide-content">
+
+              <span>Lorem ipsum dolor</span>
+
+          </div>
+
+      </div>
+
+      <div class="slide slide2">
+
+          <div class="slide-content">
+
+              <span>Lorem ipsum dolor</span>
+
+          </div>
+
+      </div>
+
+      <div class="slide slide3">
+
+          <div class="slide-content">
+
+              <span>Lorem ipsum dolor</span>
+          </div>
+
+          </div>
+
+      </div>
+
+  </div>
+
+  <div id="arrow-right" class="arrow"></div>
+
+</div> -->
+
+
+
+<!-- </form>
+
+</div>
+</div>
+
+        </div> -->
+<!-- <ngb-carousel *ngIf="images">
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="" alt="Random first slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>10 seconds between slides...</h3>
+			<p>This carousel uses customized default values.</p>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="" alt="Random second slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>No mouse events...</h3>
+			<p>This carousel doesn't pause or resume on mouse events</p>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="" alt="Random third slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>No keyboard...</h3>
+			<p>This carousel uses customized default values.</p>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="" alt="Random fourth slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>And no wrap after last slide.</h3>
+			<p>This carousel uses customized default values.</p>
+		</div>
+	</ng-template>
+</ngb-carousel> -->
+
+
+<ngb-carousel *ngIf="images">
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="images" alt="Random first slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>10 seconds between slides...</h3>
+			<p>This carousel uses customized default values.</p>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="images" alt="Random second slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>No mouse events...</h3>
+			<p>This carousel doesn't pause or resume on mouse events</p>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="images" alt="Random third slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>No keyboard...</h3>
+			<p>This carousel uses customized default values.</p>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="images" alt="Random fourth slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>And no wrap after last slide.</h3>
+			<p>This carousel uses customized default values.</p>
+		</div>
+	</ng-template>
+</ngb-carousel> 
+
+
